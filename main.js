@@ -55,7 +55,7 @@ function item_input_listener(e) {
 		/**
 		 * Update the content of the span in this shop container with a rounded number for the total cost
 		 */
-		shop.querySelector("span").innerHTML = round_number(total);
+		fab.querySelector("span").innerHTML = round_number(total);
 	});
 
 	// once this row's calculations are done, recalculate the totals for the entire list

@@ -16,6 +16,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /** SET BORDER BOX EVERYWHERE */
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 
 /** APPLY BASE TAG STYLES */
@@ -38,19 +39,6 @@ h1, h2, h4 {
     margin: 0 auto;
 }
 
-.headline {
-    position: absolute;
-    top: 270px;
-    left: 0;
-    width: 100%;
-    color: white;
-    letter-spacing: -1px;
-    background: rgb(0, 0, 0);
-    /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-}
-
 /** RESPONSIVE IMAGES */
 figure,
 img {
@@ -60,8 +48,16 @@ img {
     margin: 0 auto;
 }
 
+video {
+    width: 100%;
+}
+
 p {
     line-height: 1.3em;
+}
+
+.notes {
+    font-size: .8em;
 }
 
 /** Caption styles */

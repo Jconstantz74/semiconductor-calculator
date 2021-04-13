@@ -16,6 +16,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /** SET BORDER BOX EVERYWHERE */
 * {
     box-sizing: border-box;
+    padding: 0;
+    background: darkgray;
 }
 
 /** APPLY BASE TAG STYLES */
@@ -23,6 +25,11 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    color: white;
+}
+
+.image {
+    width: 100%;
 }
 
 /** RESPONSIVE IMAGES */
@@ -57,11 +64,6 @@ figcaption {
 }
 
 /** Images are allowed to be a little wider when broken out into their own container */
-.container.image {
-    max-width: 1200px;
-    padding: 0;
-}
-
 .container.image .caption,
 .container.image figcaption {
     padding: 5px 10px;
@@ -71,7 +73,7 @@ figcaption {
 * Calculator styles
 */
 .calc-container {
-    background-color: #f7f7f7;
+    background-color: white;
     /* Calc background is slightly gray and the full width of the page */
     padding: 22px 0;
     /* 22px of vertical padding only */
@@ -157,7 +159,7 @@ figcaption {
 */
 .calculator .row.total {
     display: none;
-    background-color: #ccc;
+    background-color: white;
     padding: 10px;
     flex-basis: 100%;
 }

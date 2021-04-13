@@ -11,7 +11,8 @@
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- Your styles should be called here -->
     <link rel="stylesheet" href="style.css" />
 
@@ -25,18 +26,15 @@
 
   <body>
     <!-- YOUR CONTENT GOES HERE -->
-    <div class='image'>
-      <video autoplay muted loop>
-        <source src="images/fab.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
     <div class='container'>
-      <h1>Here's a look at how government incentives drive where companies build new fabrication plants.</h1>
+      <div class='image'>
+        <video autoplay muted loop>
+          <source src="images/fab.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h1 class="headline">Here's a look at how government incentives drive where new fabrication plants are built.</h1>
+      </div>
       <h4 class='byline'>By Jo Constantz | April 13, 2021</h4>
-    </div>
-    <div class='container'>
-
       <p>Automakers like Ford and GM have been forced to shut down factories due to a shortage of semiconductors, a key part that underlies much of our modern technology. These shortages have brought supply chains for semiconductors and other
         critical materials and products to the fore, with many calling for more domestic production to create more resilient supply chains and ensure supply in times of crisis. Semiconductors are critical to all of our modern technology, the demand
         for much of which is expected to soar in the coming decades: Consumer technology (our iPhones, laptops, etc.), national security (defense technology and advanced weapons systems), and the growing renewable energy sector (including electric
@@ -54,15 +52,15 @@
       </p>
 
     </div>
-    <div class='calc-container'>
+    <div class="calc-container" id="overlay">
       <div class="container">
-        <h2>Comparing the cost to build new fabs in the U.S. and China.</h2>
-        <p>Each country offers different incentives and has different labor and utility costs.</p>
+        <h2 class="calctext">Compare the cost to build new fabs in the U.S. and in China:</h2>
+        <p class="calctext">Each country offers different incentives and has different labor and utility costs.</p>
         <div class="calculator">
           <div class="row">
             <div class='item'>
-              <h3>Advanced Logic</h3>
-              <images src="images/logic.jpg" />
+              <h3 class="calctext">Advanced Logic</h3>
+              <img src="images/logic.jpg" />
               <div class="qty_container">
                 <div>
                   <input type="number" name='qty' value="0" />
@@ -72,13 +70,13 @@
                 </div>
               </div>
             </div>
-            <div class="US" data-price="20.0"><strong>U.S.</strong>: $<span></span> billion</div>
-            <div class="CH" data-price="14.4"><strong>China</strong>: $<span></span> billion</div>
+            <div class="calctext" class="US" data-price="20.0"><strong>U.S.</strong>: $<span></span> billion</div>
+            <div class="calctext" class="CH" data-price="14.4"><strong>China</strong>: $<span></span> billion</div>
           </div>
           <div class="row">
             <div class='item'>
-              <h3>Advanced Memory</h3>
-              <images src="images/memory.jpg" />
+              <h3 class="calctext">Advanced Memory</h3>
+              <img src="images/memory.jpg" />
               <div class="qty_container">
                 <div>
                   <input type="number" name='qty' value="0" />
@@ -88,13 +86,13 @@
                 </div>
               </div>
             </div>
-            <div class="US" data-price="20.0"><strong>U.S.</strong>: $<span></span> billion</div>
-            <div class="CH" data-price="14.6"><strong>China</strong>: $<span></span> billion</div>
+            <div class="calctext" class="US" data-price="20.0"><strong>U.S.</strong>: $<span></span> billion</div>
+            <div class="calctext" class="CH" data-price="14.6"><strong>China</strong>: $<span></span> billion</div>
           </div>
           <div class="row">
             <div class='item'>
-              <h3>Advanced Analog</h3>
-              <images src="images/analog.jpg" />
+              <h3 class="calctext">Advanced Analog</h3>
+              <img src="images/analog.jpg" />
               <div class="qty_container">
                 <div>
                   <input type="number" name='qty' value="0" />
@@ -104,22 +102,23 @@
                 </div>
               </div>
             </div>
-            <div class="US" data-price="5.0"><strong>U.S.</strong>: $<span></span> billion</div>
-            <div class="CH" data-price="3.65"><strong>China</strong>: $<span></span> billion</div>
+            <div class="calctext" class="US" data-price="5.0"><strong>U.S.</strong>: $<span></span> billion</div>
+            <div class="calctext" class="CH" data-price="3.65"><strong>China</strong>: $<span></span> billion</div>
           </div>
           <div class="row total">
             <div class="item">
-              <h3>Total</h3>
+              <h3 class="calctext">Total</h3>
             </div>
-            <div class="US">U.S.: $<span></span> billion</div>
-            <div class="CH">China: $<span></span> billion</div>
+            <div class="calctext" class="US">U.S.: $<span></span> billion</div>
+            <div class="calctext" class="CH">China: $<span></span> billion</div>
           </div>
         </div>
       </div>
     </div>
     <!-- /.calc-container -->
     <div class="container">
-      <p>In closing, here's this fantastic explanation that will just blow ur mind</p>
+      <p>In closing, here's this fantastic explanation that will just blow ur mind</p><br>
+      <p><strong>Photo credits:</strong> TKTK</p>
     </div>
 
     <!-- Your javascript should be called here -->

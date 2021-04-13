@@ -16,8 +16,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /** SET BORDER BOX EVERYWHERE */
 * {
     box-sizing: border-box;
-    padding: 0;
-    background: darkgray;
 }
 
 /** APPLY BASE TAG STYLES */
@@ -25,11 +23,32 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    color: white;
+    background: #1e1e1e;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h4 {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .image {
     width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.headline {
+    position: absolute;
+    top: 270px;
+    left: 0;
+    width: 100%;
+    color: white;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
 
 /** RESPONSIVE IMAGES */
@@ -42,7 +61,7 @@ img {
 }
 
 p {
-    line-height: 1.2em;
+    line-height: 1.3em;
 }
 
 /** Caption styles */
@@ -61,6 +80,7 @@ figcaption {
     max-width: 800px;
     padding: 10px;
     margin: 0 auto;
+    color: white;
 }
 
 /** Images are allowed to be a little wider when broken out into their own container */
@@ -74,9 +94,9 @@ figcaption {
 */
 .calc-container {
     background-color: white;
-    /* Calc background is slightly gray and the full width of the page */
-    padding: 22px 0;
+    /* Calc background is slightly gray and the full width of the page *
     /* 22px of vertical padding only */
+    color: black;
 }
 
 .calculator .row .item img {
@@ -105,6 +125,10 @@ figcaption {
     border: 0;
 }
 
+.calctext {
+    color: black;
+}
+
 /**
 * The unit space has a gray background and takes up the remaining 10% of space as an indicator
 * to  the user how qty works
@@ -120,7 +144,7 @@ figcaption {
 * The individual stores within each item are hidden by default.
 * We also apply margins to them to air them out
 */
-.US, .GM, .JP, .SP, .SK, .TW. .CH {
+.US, .CH {
     margin: 5px 0;
     display: none;
 }

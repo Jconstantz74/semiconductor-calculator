@@ -129,11 +129,6 @@ figcaption {
 * On input, the JS toggles the active class on the row, which reveals the stores
 */
 .calculator .row.active .US,
-.calculator .row.active .GM,
-.calculator .row.active .JP,
-.calculator .row.active .SP,
-.calculator .row.active .SK,
-.calculator .row.active .TW,
 .calculator .row.active .CH, {
     display: block;
 }

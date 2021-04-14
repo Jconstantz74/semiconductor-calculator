@@ -16,14 +16,13 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /** SET BORDER BOX EVERYWHERE */
 * {
     box-sizing: border-box;
-    padding: 0;
 }
 
 /** APPLY BASE TAG STYLES */
 body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
+    font-size: 18px;
     background: #1e1e1e;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -31,12 +30,6 @@ html {
 
 h1, h2, h4 {
     font-family: 'Roboto Mono', monospace;
-}
-
-.image {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
 }
 
 /** RESPONSIVE IMAGES */
@@ -76,10 +69,15 @@ figcaption {
     max-width: 800px;
     padding: 10px;
     margin: 0 auto;
-    color: white;
+    color: #FFFFFF;
 }
 
 /** Images are allowed to be a little wider when broken out into their own container */
+.container.image {
+    max-width: 1200px;
+    padding: 0;
+}
+
 .container.image .caption,
 .container.image figcaption {
     padding: 5px 10px;
@@ -89,10 +87,10 @@ figcaption {
 * Calculator styles
 */
 .calc-container {
-    background-color: white;
+    background-color: #FFFFFF;
     /* Calc background is slightly gray and the full width of the page *
     /* 22px of vertical padding only */
-    color: black;
+    color: #000000;
 }
 
 .calculator .row .item img {
@@ -115,6 +113,7 @@ figcaption {
 */
 .qty_container input {
     display: block;
+    background-color: #cfcfcf;
     width: 100%;
     margin: 0;
     padding: 7px;
@@ -131,7 +130,7 @@ figcaption {
 */
 .qty_container .unit {
     flex-basis: 10%;
-    background-color: #CCC;
+    background-color: #b6b6b6;
     padding: 6px 0;
     text-align: center;
 }
@@ -140,16 +139,14 @@ figcaption {
 * The individual stores within each item are hidden by default.
 * We also apply margins to them to air them out
 */
-.US, .CH {
+.freshdirect,
+.peapod {
     margin: 5px 0;
     display: none;
 }
 
-/**
-* On input, the JS toggles the active class on the row, which reveals the stores
-*/
-.calculator .row.active .US,
-.calculator .row.active .CH, {
+.row.active .freshdirect,
+.row.active .peapod {
     display: block;
 }
 
@@ -179,9 +176,6 @@ figcaption {
     flex-basis: 100%;
 }
 
-/**
-* Reveal the total row when it becomes active
-*/
 .calculator .row.total.active {
     display: block;
 }
@@ -255,3 +249,5 @@ figcaption {
         padding: 5px 0;
     }
 }
+
+Message coding-the-news
